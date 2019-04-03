@@ -5,6 +5,7 @@ Your goal for this question is to write a program that accepts two lines (x1,x2)
 
 ## Approach:
 * I walked through the problem following PEDAC. One can see my notes in approach folder
+* Having my notes in mind, I started coding following TDD approach using the built-in unit test library
 
 ### Overall, some main rules considered:
 * A line cannot have the same start and end value
