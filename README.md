@@ -6,6 +6,8 @@ Your goal for this question is to write a program that accepts two lines (x1,x2)
 ## Approach:
 * I walked through the problem following PEDAC. One can see my notes in approach folder
 * Having my notes in mind, I started coding following TDD approach using the built-in unit test library
+* The question asked for a 'program', I understood like putting the code out of a function. One can see such approach in main.py file. I built it as command line program. On the other hand, I thought it would be better having this as a module, so I created a module called 'lines' with a function called 'overlap'. On can check it in main_from_module.py
+* I used docstring to write the documentation for it.
 
 ### Overall, some main rules considered:
 * A line cannot have the same start and end value
@@ -35,6 +37,7 @@ The goal of this question is to write a software library that accepts 2 version 
 import stringutils
 stringutils.compare('really','straightforward')
 ```
+
 ## Wanna know what stringutils has to offer?
 
 ```
