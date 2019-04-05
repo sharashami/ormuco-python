@@ -26,13 +26,15 @@ class TestLines(unittest.TestCase):
         self.assertEqual(lines.overlap(-2,6,-3,0), True)
         self.assertEqual(lines.overlap(-7,-2,-1,5), False)
         self.assertEqual(lines.overlap(-1,5,-7,-2), False)
-
+        
         with self.assertRaises(ValueError):
             lines.overlap(6,6,1,5)#a line cannot have same start and end value
         with self.assertRaises(ValueError):
             lines.overlap(1,5,6,6)    
         with self.assertRaises(ValueError):
             lines.overlap('f',5,6,6)  
+        with self.assertRaises(ValueError):
+            lines.overlap(None,5,6,6)  
 
 if __name__ == '__main__':
     unittest.main()
